@@ -1,0 +1,9 @@
+﻿#pragma kernel CSMain
+
+RWStructuredBuffer<float3> ResultBuffer;
+
+[numthreads(8,8,1)]
+void CSMain (uint index : SV_GroupIndex, uint3 groupThreadId : SV_GroupThreadID)
+{
+    ResultBuffer[index] = groupThreadId;
+}
