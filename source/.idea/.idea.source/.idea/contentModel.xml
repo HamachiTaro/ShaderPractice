@@ -6,8 +6,33 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ComputeShader" t="Include">
+          <e p="DrawCircle" t="Include">
+            <e p="DrawCircle.compute" t="Include" />
+            <e p="DrawCircle.cs" t="Include" />
+          </e>
+          <e p="DrawOnScreen" t="Include">
+            <e p="DrawOnScreen.compute" t="Include" />
+            <e p="DrawOnScreen.cs" t="Include" />
+          </e>
+          <e p="GroupThreadID" t="Include">
+            <e p="GroupThreadIDTest.compute" t="Include" />
+            <e p="GroupThreadIDTest.cs" t="Include" />
+          </e>
+          <e p="ThreadID2Texture" t="Include">
+            <e p="ThreadID2Texture.compute" t="Include" />
+            <e p="ThreadID2Texture.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Library" t="Include">
+          <e p="BlueShader.shader" t="Include" />
+          <e p="Common.cginc" t="Include" />
+          <e p="RedShader.shader" t="Include" />
+        </e>
         <e p="Noise" t="Include">
+          <e p="CellularNoise.shader" t="Include" />
           <e p="Render.cs" t="Include" />
+          <e p="Voronoi.shader" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
