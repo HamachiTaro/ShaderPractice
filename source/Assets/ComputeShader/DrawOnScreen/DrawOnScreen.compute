@@ -2,8 +2,10 @@
 
 RWTexture2D<float4> ResultBuffer;
 
+float2 ScreenSize;
+
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID)
 {
-    ResultBuffer[id.xy] = float4(id.x / 512.0, id.y / 512.0, 0.0, 1.0); 
+    ResultBuffer[id.xy] = float4(id.x / ScreenSize.x, id.y / ScreenSize.y, 0.0, 1.0); 
 }

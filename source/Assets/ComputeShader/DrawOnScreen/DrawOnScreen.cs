@@ -21,7 +21,7 @@ public class DrawOnScreen : MonoBehaviour
 
         _computeShader.GetKernelThreadGroupSizes(kernelIndex, out var sizeX, out var sizeY, out var sizeZ);
 
-        _computeShader.Dispatch(kernelIndex, (int) (Screen.width / sizeX) + 1, (int) (Screen.width / sizeY) + 1, 1);
+        _computeShader.Dispatch(kernelIndex, (int) (Screen.width / sizeX) + 1, (int) (Screen.height / sizeY) + 1, 1);
     }
 
     private void OnGUI()
